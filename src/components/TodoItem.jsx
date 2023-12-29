@@ -9,7 +9,7 @@ function TodoItem({ todo }) {
     const {deleteTodo, updateTodo, toggleComplete} = useTodoContext()
 
     const editTodo = () => {
-        updateTodo(todo.id, {...todo, description: todo.description})
+        updateTodo(todo.id, {...todo, description: todoMsg})
         setIsTodoEditable(false)
     }
 

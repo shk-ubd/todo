@@ -13,7 +13,7 @@ function App() {
    }
 
    const updateTodo = (id, description) => {
-    setTaskList((prev)=> prev.map( (eachTodo)=> (eachTodo.id === id? description: eachTodo)))
+    setTaskList((prev)=> prev.map( (eachTodo)=> (eachTodo.id === id? description : eachTodo)))
    }
 
    const deleteTodo = (id) => {
@@ -50,7 +50,6 @@ function App() {
         <div className="flex flex-wrap gap-y-3">
           {
             taskList.map((eachTask) => (
-              console.log(eachTask),
               <div key={eachTask.id}
               className='w-full'
               >
